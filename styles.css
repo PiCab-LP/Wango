@@ -133,7 +133,7 @@ body {
     right: 160px;
     top: 81px;
     width: 320px;
-    height: calc(100vh - 65px);
+    /* height: calc(100vh - 65px); */
     padding: 24px 16px;
     overflow-y: auto;
 }
