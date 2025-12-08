@@ -6,7 +6,8 @@ Intento de clon responsive de la interfaz de Google Wallet creado con HTML y CSS
 
 
 ## 📸 Captura de pantalla
-<img width="1920" height="996" alt="image" src="https://github.com/user-attachments/assets/aff19433-63c8-46cf-9af8-317c405c119a" />
+<img width="1892" height="940" alt="image" src="https://github.com/user-attachments/assets/aeacbdae-56d2-41ec-80e2-ec5c5fec5b52" />
+
 
 ## 🛠️ Tecnologías utilizadas
 - HTML5
