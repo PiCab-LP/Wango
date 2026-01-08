@@ -20,7 +20,6 @@
         </div>
     </header>
 
-
     <nav class="navegacion-principal">
         <ul>
             <li><a href="./index.html">Página principal</a></li>
@@ -29,7 +28,6 @@
             <li class="active"><a href="./configuración.html">Configuración</a></li>
         </ul>
     </nav>
-
 
     <main class="contenido-configuracion">
         <h2>Configuración</h2>
@@ -43,11 +41,10 @@
                     <p>Recibe consejos para solucionar problemas e información útil sobre cómo usar Wango, además de cómo pagar online de forma rápida y segura</p>
                 </div>
                 <label class="switch-toggle">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" id="toggle-ayuda" checked>
                     <span class="slider-toggle"></span>
                 </label>
             </div>
-
 
             <div class="opcion-toggle">
                 <div class="texto-opcion">
@@ -55,11 +52,10 @@
                     <p>Recibe contenido promocional, recomendaciones y novedades en función de tu actividad en Wango</p>
                 </div>
                 <label class="switch-toggle">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" id="toggle-promociones" checked>
                     <span class="slider-toggle"></span>
                 </label>
             </div>
-
 
             <div class="opcion-toggle">
                 <div class="texto-opcion">
@@ -67,27 +63,25 @@
                     <p>Recibe ofertas exclusivas, promociones y novedades sobre las funciones de Wango</p>
                 </div>
                 <label class="switch-toggle">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" id="toggle-ofertas" checked>
                     <span class="slider-toggle"></span>
                 </label>
             </div>
         </section>
 
-
-<section class="seccion-direcciones">
-    <h3>Direcciones</h3>
-    <button class="opcion-direcciones-clickeable" id="btn-autocompletar">
-        <div class="contenido-direccion">
-            <p class="titulo-direccion">Autocompletar en Wango</p>
-            <p class="descripcion-direccion">Más información sobre cómo gestionar tus direcciones en la función de autocompletar de Wango</p>
-        </div>
-        <svg class="icono-flecha" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </button>
-</section>
+        <section class="seccion-direcciones">
+            <h3>Direcciones</h3>
+            <button class="opcion-direcciones-clickeable" id="btn-autocompletar">
+                <div class="contenido-direccion">
+                    <p class="titulo-direccion">Autocompletar en Wango</p>
+                    <p class="descripcion-direccion">Más información sobre cómo gestionar tus direcciones en la función de autocompletar de Wango</p>
+                </div>
+                <svg class="icono-flecha" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </section>
     </main>
-
 
     <footer class="pie-pagina">
         <ul>
@@ -97,5 +91,7 @@
             <li><a href="#">Privacidad de pagos</a></li>
         </ul>
     </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>

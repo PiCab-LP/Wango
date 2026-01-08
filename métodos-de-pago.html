@@ -20,7 +20,6 @@
         </div>
     </header>
 
-
     <nav class="navegacion-principal">
         <ul>
             <li><a href="./index.html">Página principal</a></li>
@@ -30,23 +29,12 @@
         </ul>
     </nav>
 
-
     <main class="contenido-metodos-pago">
         <h2>Métodos de pago</h2>
         <p>Añade, consulta y gestiona los métodos de pago guardados en Wango</p>
         <button class="boton-anadir-metodo">Añadir método de pago</button>
 
-
-        <div class="lista-tarjetas">
-            <div class="tarjeta-pago">
-                <img src="./logos and imgs/tarjeta-de-credito.png" alt="tarjeta-de-credito">
-                <div class="info-tarjeta">
-                    <p>Visa Debito Clasica Compras •••• 4306</p>
-                    <p>09/26</p>
-                </div>
-            </div>
-        </div>
-
+        <div class="lista-tarjetas" id="listaTarjetas"></div>
 
         <aside class="nota-informativa">
             <img src="./logos and imgs/lampara.png">
@@ -54,6 +42,61 @@
         </aside>
     </main>
 
+    <div class="modal-overlay" id="modalAgregarTarjeta">
+        <div class="modal-contenido">
+            <button class="cerrar-modal" id="cerrarModal">✕</button>
+            <h3>Añadir método de pago</h3>
+            <form id="formTarjeta">
+                <label for="numeroTarjeta">Número de tarjeta *</label>
+                <input type="text" id="numeroTarjeta" maxlength="16" required>
+
+                <label for="fechaVencimiento">Fecha de vencimiento *</label>
+                <input type="text" id="fechaVencimiento" placeholder="MM/AA" maxlength="5" required>
+
+                <label for="codigoSeguridad">Código de seguridad *</label>
+                <input type="text" id="codigoSeguridad" maxlength="3" required>
+
+                <button type="submit" class="boton-guardar">Guardar tarjeta</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalEliminar">
+        <div class="modal-contenido modal-confirmar">
+            <h3>¿Eliminar tarjeta?</h3>
+            <p>Esta acción no se puede deshacer</p>
+            <div class="botones-confirmar">
+                <button id="btnCancelar" class="boton-cancelar">Cancelar</button>
+                <button id="btnConfirmar" class="boton-confirmar">Eliminar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalVerSaldo">
+        <div class="modal-contenido modal-saldo">
+            <button class="cerrar-modal" id="cerrarModalSaldo">✕</button>
+            <h3>Saldo de tarjeta</h3>
+            <div class="saldo-display">
+                <img src="./logos and imgs/tarjeta-de-credito.png" alt="tarjeta">
+                <div class="saldo-info">
+                    <p id="tarjetaNombreSaldo"></p>
+                    <p class="saldo-monto-tarjeta" id="montoSaldoTarjeta">S/. 0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalEditarAlias">
+        <div class="modal-contenido">
+            <button class="cerrar-modal" id="cerrarModalAlias">✕</button>
+            <h3>Editar alias de tarjeta</h3>
+            <form id="formEditarAlias">
+                <label for="nuevoAlias">Nuevo alias *</label>
+                <input type="text" id="nuevoAlias" maxlength="30" placeholder="Ej: Mi tarjeta personal" required>
+                <button type="submit" class="boton-guardar">Guardar cambios</button>
+            </form>
+        </div>
+    </div>
 
     <footer class="pie-pagina">
         <ul>
@@ -63,5 +106,7 @@
             <li><a href="#">Privacidad de pagos</a></li>
         </ul>
     </footer>
-</body>
+
+    <script src="./app.js"></script>
+  </body>
 </html>

@@ -59,13 +59,7 @@
             <section class="seccion-metodos-pago">
                 <h2>Métodos de pago</h2>
                 <p>Añade, consulta y gestiona los métodos de pago que se pueden usar con Wango</p>
-                <div class="tarjeta-contenedor">
-                    <img src="./logos and imgs/tarjeta-de-credito.png" alt="tarjeta-de-credito">
-                    <div class="tarjeta-info">
-                        <p>Visa Debito Clasica Compras •••• 4306</p>
-                        <p>09/26</p>
-                    </div>
-                </div>
+                <div class="contenedor-tarjetas" id="contenedorTarjetas"></div>
                 <button class="boton-anadir-metodo">Añadir método de pago</button>
             </section>
 
@@ -133,7 +127,7 @@
         <form id="formTarjeta">
             <div class="form-grupo">
                 <label for="numeroTarjeta">Número de tarjeta *</label>
-                <input type="text" id="numeroTarjeta" maxlength="16" placeholder="1234567890123456" required>
+                <input type="text" id="numeroTarjeta" maxlength="16" placeholder="xxxxxxxxxxxxxxxxx" required>
             </div>
             <div class="form-grupo">
                 <label for="fechaVencimiento">Fecha de vencimiento *</label>
