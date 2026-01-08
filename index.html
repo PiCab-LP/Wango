@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+
+        <div class="pantalla-carga" id="pantallaCarga">
+        <div class="contenedor-logo">
+            <img src="./logos and imgs/ewallet.png" alt="logo-wango">
+            <h1>Wango</h1>
+        </div>
+    </div>
+
     <header class="header-principal">
         <button class="boton-menu">
             <img src="./logos and imgs/menu.png" alt="menú-hamburguesa">
@@ -20,22 +28,34 @@
         </div>
     </header>
 
-
-
     <nav class="navegacion-principal">
         <ul>
             <li class="active"><a href="./index.html">Página principal</a></li>
             <li><a href="./métodos-de-pago.html">Métodos de pago</a></li>
-            <li><a href="./pases.html">Pases</a></li>
             <li><a href="./transacciones.html">Transacciones</a></li>
             <li><a href="./configuración.html">Configuración</a></li>
         </ul>
     </nav>
 
-
-
     <main class="contenido-principal">
         <div class="contenido-izquierdo">
+            <section class="seccion-saldo">
+                <p class="saldo-label">Saldo disponible</p>
+                <div class="saldo-monto-contenedor">
+                    <h2 class="saldo-monto">S/. 1,250.00</h2>
+                    <button class="boton-ocultar-saldo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                </div>
+                <div class="saldo-acciones">
+                    <button class="boton-copiar-link">Copiar link de pago</button>
+                    <button class="boton-generar-link">Generar otro link de pago</button>
+                </div>
+            </section>
+
             <section class="seccion-metodos-pago">
                 <h2>Métodos de pago</h2>
                 <p>Añade, consulta y gestiona los métodos de pago que se pueden usar con Wango</p>
@@ -49,17 +69,6 @@
                 <button class="boton-anadir-metodo">Añadir método de pago</button>
             </section>
 
-
-
-            <section class="seccion-tarjetas-regalo">
-                <h2>Añadir Tarjetas de Regalo</h2>
-                <p>Haz un seguimiento de las recompensas y, compra en tus tiendas favoritas</p>
-                <button class="boton-anadir-documento">Añadir documento</button>
-                <img src="./logos and imgs/regalo.png">
-            </section>
-
-
-
             <section class="seccion-transacciones">
                 <h2>Transacciones recientes</h2>
                 <p>No hay transacciones que mostrar. Cuando empieces a hacer transacciones compartidas con Wango, las encontrarás aquí.</p>
@@ -67,60 +76,46 @@
                 <img src="./logos and imgs/hora.png">
             </section>
 
-
-
             <section class="seccion-preguntas">
                 <h2>¿Tienes alguna pregunta?</h2>
                 <details class="pregunta-item">
-                    <summary>¿Qué puedo hacer en el sitio web de Wango?</summary>
-                    <p>Puedes gestionar tus métodos de pago, consultar transacciones y ver pases, carnés y tarjetas. También puedes gestionar la configuración de Google Wallet y Google Pay.</p>
+                    <summary>¿Qué es Wango y cuál es su principal función?</summary>
+                    <p>Es una aplicación que genera links de pago temporales y seguros que desaparecen después de cada compra.</p>
                 </details>
                 <details class="pregunta-item">
-                    <summary>¿Qué métodos de pago puedo gestionar en este sitio?</summary>
-                    <p>Puedes ver, añadir, editar y eliminar los métodos de pago que se pueden usar para pagar sin contacto con dispositivos Android y para pagar online, en distintos servicios de Google (como Google Play y YouTube) y en cualquier lugar donde se admita Google Pay. Algunos métodos de pago (como el saldo de Google Store o Google Store Financing) no están disponibles en este sitio web. Consulta otros métodos de pago en el centro de pagos de Google o en la aplicación Google Wallet.</p>
+                    <summary>¿Qué problema busca resolver Wango?</summary>
+                    <p>Evita tener que ingresar repetidamente los datos de tarjetas en diferentes sitios, reduciendo riesgos de seguridad y ahorrando tiempo.</p>
                 </details>
                 <details class="pregunta-item">
-                    <summary>¿Qué tipos de pases puedo ver en este sitio?</summary>
-                    <p>En este sitio web puedes ver documentos como tarjetas de fidelización, entradas de conciertos y billetes de avión. Algunos documentos solo están disponibles en la aplicación Google Wallet, como los documentos de identificación y las llaves digitales de coches. Más información sobre cómo gestionar elementos en Google Wallet</p>
+                    <summary>¿Qué tipos de tarjetas puedo agregar en Wango?</summary>
+                    <p>Acepta todo tipo de tarjetas físicas de cualquier red de pago (Visa, Mastercard, American Express, Diners Club, etc.), excepto tarjetas virtuales.</p>
                 </details>
                 <details class="pregunta-item">
-                    <summary>¿Qué tipos de transacciones puedo ver en este sitio?</summary>
-                    <p>Algunas de las transacciones que aparecen aquí son pagos que has hecho con Google Pay, como las transacciones sin contacto. Hay algunas transacciones, como las compras en Google Play, YouTube o Google One, que no están disponibles en este sitio web. Busca otras transacciones en el centro de pagos de Google.</p>
+                    <summary>¿En donde puedo utlizar Wango?</summary>
+                    <p>Puedes usarla en cualquier aplicación, ecommerce o tienda virtual que acepte las mismas redes de pago de tu tarjeta (Visa, Mastercard, etc.)</p>
                 </details>
                 <details class="pregunta-item">
-                    <summary>¿Cómo puedo proteger mi cuenta de Wango en caso de pérdida o robo del dispositivo?</summary>
-                    <p>Si pierdes tu dispositivo Android o te lo roban, hay varios pasos que puedes seguir para protegerlo. Consulta más información sobre cómo encontrar y bloquear tu dispositivo Android, o borrar sus datos</p>
+                    <summary>¿Qué funcionalidades principales ofrece Wango al usuario?</summary>
+                    <p>Permite agregar tarjetas, métodos de pago y pases, revisar información y generar links de pago ilimitadamente.</p>
                 </details>
                 <details class="pregunta-item">
                     <summary>¿Tienes más preguntas?</summary>
-                    <p>Para los métodos de pago y las transacciones, ve al Centro de Ayuda de Wango. Para los pases, ve al Centro de Ayuda de Wango.</p>
+                    <p>Para los métodos de pago y las transacciones, ve al Centro de Ayuda de Wango. Para las tarjetas de regalo, ve al Centro de Ayuda de Wango.</p>
                 </details>
             </section>
         </div>
-
-
 
         <aside class="barra-lateral">
             <section class="tarjeta-ayuda">
                 <div class="fondo-1">
                     <img src="https://www.gstatic.com/gpay/web/upsell_rtp.svg">
                 </div>
-                <h3>Paga más rápido con Autocompletar</h3>
-                <p>No tienes que seguir escribiendo tus datos para pagos en Chrome ni en Android. Cuando hayas guardado tu tarjeta, podrás pagar con solo unos clics.</p>
+                <h3>Paga más rápido con Wango</h3>
+                <p>No tienes que seguir escribiendo tus datos para pagos. Cuando hayas guardado tus tarjetas, solo genera un link de pago y ¡Listo!</p>
                 <a href="#">Ver cómo funciona</a>
-            </section>
-            <section class="tarjeta-ayuda">
-                <div class="fondo-2">
-                    <img src="https://www.gstatic.com/gpay/web/transaction_edu.svg">
-                </div>
-                <h3>¿Buscas compras o suscripciones de Google?</h3>
-                <p>Algunas transacciones (como las compras en YouTube) y algunos métodos de pago (como Google Store Financing) solo están disponibles en tu cuenta de Google.</p>
-                <a href="#">Ver tu cuenta de Google</a>
             </section>
         </aside>
     </main>
-
-
 
     <footer class="pie-pagina">
         <ul>
@@ -130,6 +125,42 @@
             <li><a href="#">Privacidad de pagos</a></li>
         </ul>
     </footer>
+
+<div class="modal-overlay" id="modalAgregarTarjeta">
+    <div class="modal-contenido">
+        <button class="modal-cerrar" id="cerrarModal">&times;</button>
+        <h2>Añadir método de pago</h2>
+        <form id="formTarjeta">
+            <div class="form-grupo">
+                <label for="numeroTarjeta">Número de tarjeta *</label>
+                <input type="text" id="numeroTarjeta" maxlength="16" placeholder="1234567890123456" required>
+            </div>
+            <div class="form-grupo">
+                <label for="fechaVencimiento">Fecha de vencimiento *</label>
+                <input type="text" id="fechaVencimiento" placeholder="MM/AA" maxlength="5" required>
+            </div>
+            <div class="form-grupo">
+                <label for="codigoSeguridad">Código de seguridad *</label>
+                <input type="text" id="codigoSeguridad" maxlength="3" placeholder="123" required>
+            </div>
+            <button type="submit" class="boton-guardar">Guardar tarjeta</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modalEliminar">
+    <div class="modal-contenido-pequeño">
+        <h3>¿Estás seguro?</h3>
+        <p>¿Quieres eliminar esta tarjeta? Esta acción no se puede deshacer.</p>
+        <div class="botones-confirmacion">
+            <button class="boton-cancelar" id="btnCancelar">Cancelar</button>
+            <button class="boton-confirmar" id="btnConfirmar">Eliminar</button>
+        </div>
+    </div>
+</div>
+
+    <script src="./app.js"></script>
+
   </body>
 </html>
 
